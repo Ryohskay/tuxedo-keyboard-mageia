@@ -40,6 +40,8 @@ MODULE_NAME := $(shell sed -n 's/^PACKAGE_NAME=\([^\n]*\)/\1/p' dkms.conf 2>&1 /
 
 dkmsinstall:
 	cp -R . /usr/src/$(MODULE_NAME)-$(VER)
+	dkms add -m $(MODULE_NAME) -v $(VER)
+	dkms build -m $(MODULE_NAME) -v $(VER)
 	dkms install -m $(MODULE_NAME) -v $(VER)
 
 dkmsremove:
