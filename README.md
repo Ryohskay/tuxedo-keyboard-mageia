@@ -1,12 +1,20 @@
-# Table of Content
-- <a href="#description">Description</a>
-- <a href="#building">Building and Install</a>
-- <a href="#using">Using</a>
-- <a href="#sysfs">Sysfs</a>
-- <a href="#kernelparam">Kernel Parameter</a>
-- <a href="#modes">Modes</a>
+# NOTE
+This is a forked repository from Tuxedo computers' repository of their driver.
+The only difference at this point is the `Makefile` so that it work on Mageia 8 Linux.
+You should always refer to the original repository to see whether there is any update there, 
+and it is recommended to use this repository only for reference when you trying to install the driver module 
+with your own Makefile.
 
-# Description <a name="description"></a>
+# Table of Content
+- [Description](#description)
+- [Building and Install](#building-and-install)
+- [Using](#using)
+- [Sysfs](#sysfs)
+- [Kernel Parameter](#kernel-parameter)
+- [Modes](#modes)
+
+# Description
+
 TUXEDO Computers kernel module drivers for keyboard, keyboard backlight & general hardware I/O
 
 Features
@@ -20,7 +28,7 @@ Modules included in this package
 - clevo-wmi
 - clevo-acpi
 
-# Building and Install <a name="building"></a>
+# Building and Install
 
 ## Dependencies:
 - make
@@ -81,7 +89,7 @@ sudo make dkmsremove
 sudo rm /etc/modprobe.d/tuxedo_keyboard.conf
 ```
 
-# Using <a name="using"></a>
+# Using
 
 ## modprobe
 
@@ -122,7 +130,7 @@ or
 sudo cp tuxedo_keyboard.conf /etc/modprobe.d/tuxedo_keyboard.conf
 ```
 
-# Sysfs <a name="sysfs"></a>
+# Sysfs
 
 ## General
 Path: `/sys/devices/platform/tuxedo_keyboard`
@@ -159,7 +167,7 @@ Description: Set the State of keyboard, `0` is keyboard is off and `1` is keyboa
 Allowed Values: `0`, `1`   
 Description: Only get the information, if the keyboard have the extra region
 
-# Kernel Parameter <a name="kernelparam"></a>
+# Kernel Parameter
 
 ## Using
 ```sh
@@ -186,8 +194,7 @@ Set the brightness of keyboard
 
 ## state
 
-# Modes <a name="modes"></a>
-
+# Modes
 ## CUSTOM
 Value: `0`
 
