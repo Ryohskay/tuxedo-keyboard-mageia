@@ -52,9 +52,7 @@ git checkout release
 make clean && make
 ```
 
-## The DKMS route:
-
-### Add as DKMS Module:
+## Add as DKMS Module:
 
 Install the Module:
 ```sh
@@ -74,7 +72,7 @@ sudo modprobe tuxedo_keyboard
 
 You might also want to activate `tuxedo_io` module the same way if you are using [TCC](https://github.com/tuxedocomputers/tuxedo-control-center).
 
-### Uninstalling the DKMS module:
+## Uninstalling the DKMS module:
 
 Remove the DKMS module and source:
 ```sh
