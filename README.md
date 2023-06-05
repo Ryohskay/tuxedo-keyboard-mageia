@@ -1,6 +1,6 @@
 # NOTE
 This is a forked repository from [Tuxedo computers' repository of their driver](https://github.com/tuxedocomputers/tuxedo-keyboard).
-The only difference at this point is the `Makefile` so that it work on Mageia 8 Linux.
+The only difference at this point is the `Makefile` so that it works on Mageia 8 Linux.
 You should always refer to the original repository to see whether there is any update there, 
 and it is recommended to use this repository only for reference when you trying to install the driver module 
 with your own Makefile.
